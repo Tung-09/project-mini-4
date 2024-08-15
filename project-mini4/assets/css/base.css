@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text:#1E1E1E;
+  --color-desr:#897777;
+  --color-icon:#F6A67F;
+  --font1: "Roboto", sans-serif;
+  --font2:"Shippori Mincho", sans-serif;
+  --bg-1:#F6F6F6;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font1);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-desr);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.row {
+  display: inline;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 450px;
+  }
+}
+@media (max-width: 479px) {
+  .container {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=base.css.map */

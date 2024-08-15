@@ -1,0 +1,278 @@
+// header
+html {
+    scroll-behavior: smooth
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    background: #1B1B1C;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+  
+      
+}
+
+  
+
+// end-header
+// button
+.button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #ffff;
+    color: #ffff;
+    font-weight: 600;
+    background: none;
+    font-size: 13px;
+
+    &--one:hover {
+        border: 0;
+        background: var(--color-icon);
+        color: #ffff;
+    }
+    &--two:hover{
+        border: 0;
+        background: var(--bg-1);
+        color:black;
+        i{
+            color: black;
+        }
+    }
+}
+
+// end-button
+// section-one
+.section-one {
+    background-image: url(https://htmldemo.net/neonal/p2/img/neonal/slider-landing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    padding-top: 350px;
+    position: static;
+
+    &::before {
+        background-color: #07332f;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: "";
+        z-index: 1;
+    }
+
+    &__main {
+        color: #ffff;
+        font-family: var(--font2);
+        text-align: center;
+        font-weight: 500;
+        position: relative;
+        z-index: 9999;
+    }
+
+    &__head {
+        margin-bottom: 30px;
+        font-size: 50px;
+    }
+
+    &__title {
+        font-size: 40px;
+    }
+
+    &__desr {
+        margin-top: 28px;
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+    @media (max-width: 767.98px) {
+        &__head{
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        &__title{
+            font-size: 24px;
+        }
+        &__desr{
+            margin-bottom: 20px;
+        }
+        
+      }
+      
+      
+      
+
+}
+
+// end-section-one
+// main
+.main {
+    margin-top: 120px;
+    text-align: center;
+    background: var(--bg-1);
+    padding-bottom: 70px;
+    &__list {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin-bottom: 50px;
+        &:hover{
+            .main__icon{
+                display: flex;
+                z-index: 999;
+            }
+            .main__image::after{
+                background-color: #07332f;
+                opacity: 0.7;
+                position: absolute;
+                top: 0;
+                bottom: 127.9999999px;
+                left: 15px;
+                right: 15px;
+                content: "";
+                z-index: 1;
+                margin: 0 auto;
+            } 
+            .main__image{
+                padding-bottom: 30px;
+            } 
+        }
+    }
+    // .col-xl-4{
+    //     display: flex;
+    //     justify-content: center;
+    // }
+    &__image {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        
+    }
+
+    &__title {
+        padding: 25px 0;
+        font-family: 600;
+        &:hover{
+            color: var(--color-icon);
+        }
+    }
+    &__icon{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background:none;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        i{
+            color: #ffff;
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+   
+            
+}
+
+// end-main
+// features
+.features{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: #3F3F3F;
+    font-family: var(--font2);
+    .row{
+        display: flex;
+        align-items: center;
+    }
+    &__title{
+        margin-bottom: 70px;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    &__list{
+        display: flex;
+        align-items: start;
+        margin-bottom: 50px;
+    }
+    &__icon{
+        margin-right: 20px;
+        font-size: 40px;
+        color: var(--color-icon);
+    }
+    &__text{
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    &__desr{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+   
+}
+
+// end-features
+// footer
+.footer{
+    padding: 65px 0 50px;
+    background-color: #07332f;
+    .row{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    &__title{
+        color: #ffff;
+        font-size: 30px;
+        font-family: var(--font2);
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .button--one:hover{
+        background: #ffff;
+        color: var(--color-icon);
+    }
+      
+}
+
+
+
+
+
+// end-footer
